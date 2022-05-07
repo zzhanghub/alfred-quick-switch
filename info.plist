@@ -125,7 +125,12 @@ end alfred_script</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>Quick Switch works like the Ctrl+G operation of Listary.
+It can help MacOS users easily jump to the open folder of the file you’re working with.
+
+Now, it works in two ways：
+1. Type the keyword `s2f`
+2. Use shortcut `ctrl + g`</string>
 	<key>uidata</key>
 	<dict>
 		<key>466A313D-8444-41CB-843C-D13C3E9A913F</key>
@@ -150,6 +155,10 @@ end alfred_script</string>
 			<integer>360</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>0.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/zzhanghub/alfred-quick-switch</string>
 </dict>

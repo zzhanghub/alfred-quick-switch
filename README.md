@@ -10,7 +10,7 @@
   <p align="center">
  Click Ctrl+G to instantly jump to the open folder of the file you’re working with.
     <br />
-    <a href="http://www.packal.org/workflow/template-file"><strong>⏬ Download »</strong></a>
+    <a href="http://www.packal.org/workflow/quick-switch"><strong>⏬ Download »</strong></a>
     <br/>
   </p>
 </p>
