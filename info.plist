@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>zbrl.QuickSwitch</string>
+	<key>category</key>
+	<string>zbrl</string>
+	<key>connections</key>
+	<dict>
+		<key>466A313D-8444-41CB-843C-D13C3E9A913F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4D20BC08-546E-4070-9B7F-CF0B3B6616B9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>709F95F7-D2B0-499F-B2BD-9A75B0265AF5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4D20BC08-546E-4070-9B7F-CF0B3B6616B9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>zbrl</string>
+	<key>description</key>
+	<string>Click Ctrl+G to instantly jump to the open folder of the file you’re working with.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Quick Switch</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>s2f</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Switch path to recent finder</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>466A313D-8444-41CB-843C-D13C3E9A913F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+	tell application "Finder"
+		set the clipboard to (POSIX path of (folder of the front window as alias))
+	end tell
+	tell application "System Events"
+		keystroke "g" using {command down, shift down}
+		delay 0.05
+		keystroke "v" using command down
+		delay 0.05
+		key code 36
+	end tell
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>4D20BC08-546E-4070-9B7F-CF0B3B6616B9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>709F95F7-D2B0-499F-B2BD-9A75B0265AF5</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>466A313D-8444-41CB-843C-D13C3E9A913F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>220</integer>
+			<key>ypos</key>
+			<integer>125</integer>
+		</dict>
+		<key>4D20BC08-546E-4070-9B7F-CF0B3B6616B9</key>
+		<dict>
+			<key>xpos</key>
+			<integer>470</integer>
+			<key>ypos</key>
+			<integer>230</integer>
+		</dict>
+		<key>709F95F7-D2B0-499F-B2BD-9A75B0265AF5</key>
+		<dict>
+			<key>xpos</key>
+			<integer>225</integer>
+			<key>ypos</key>
+			<integer>360</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/zzhanghub/alfred-quick-switch</string>
+</dict>
+</plist>
