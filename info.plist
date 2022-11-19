@@ -155,10 +155,12 @@ Now, it works in two ways：
 			<integer>360</integer>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1</string>
+	<string>1.0.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/zzhanghub/alfred-quick-switch</string>
 </dict>

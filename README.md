@@ -21,7 +21,7 @@
 The official repo of the 
 [Quick Switch](https://www.bilibili.com/video/BV1gY411A7o6/).
 It can help MacOS users easily jump to the open folder of the file you’re working with.  It likes the 'Ctrl+G' of Listary APP in Windows.
-This video shows its usage
+This [video](https://www.bilibili.com/video/BV1gY411A7o6/) shows its usage.
 Now, it works in two ways：
 
 1. Type keyword `s2f`
@@ -33,7 +33,9 @@ Now, it works in two ways：
 <!-- 1. Directly create a folder or any type of empty file.
 2. Create folders or files from template files or folders. -->
 
-
+## Demo
+  * Quickly switch the download dialog window to the recently worked directory
+  ![demo](./pic/shortcut.png)
 
 ## Prerequisites
 * macOS
